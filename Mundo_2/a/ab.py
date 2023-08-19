@@ -1,2 +1,0 @@
-def blwbs():
-    print('a')
