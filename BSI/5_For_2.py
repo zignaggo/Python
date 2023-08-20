@@ -22,14 +22,16 @@ for student in range(1, number_students+1):
         grade = float(
             input(f"Quanto o {student}° Aluno tirou no {semester} Bimestre?: "))
         student_average += grade
-        # Average Calc 
-        if (semester == 4):
-            student_list.append(student_average/4)
-            if((student_average/4) < 6):
-                disapproved += 1
-            else:
-                approved += 1
-            print('-'*30)
+       
+    student_list.append(student_average/4)
+
+    if((student_average/4) < 6):
+        disapproved += 1
+    else:
+        approved += 1
+
+    print('-'*30)
+
     higher_average = student_list[0]
     lower_average = student_list[0]
     # Get Lower and Higher Average
